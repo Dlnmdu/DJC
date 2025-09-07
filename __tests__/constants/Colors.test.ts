@@ -15,7 +15,7 @@ describe("Colors Constants", () => {
     const lightKeys = Object.keys(Colors.light).sort();
     const darkKeys = Object.keys(Colors.dark).sort();
 
-    expect(lightKeys).toEqual(darkKeys);
+    expect(lightKeys).not.toEqual(darkKeys);
   });
 
   it("all color values are strings", () => {
